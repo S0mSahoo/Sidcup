@@ -11,7 +11,7 @@ document.addEventListener('mousemove', function (dets) {
     })
 })
 
-var targets = document.querySelectorAll('#nav *, .card')
+var targets = document.querySelectorAll('#nav *, .card, .col, #foot-row-1 img, .links li, #address strong, #address h4, #foot-row-2 svg, #foot-row-3 span')
 console.log(targets)
 targets.forEach(element => {
     element.addEventListener('mouseenter', function () {
@@ -44,6 +44,47 @@ gsap.to("#main", {
         trigger: '#main',
         start: 'top 20%',
         end: 'top -70%',
+        scrub: 1
+    }
+})
+
+document.querySelector('.active').innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+</svg>`
+
+gsap.from("#colon-1", {
+    top: '2%',
+    left: '5%',
+    duration: 0.4,
+    scrollTrigger:{
+        trigger: '#reviews',
+        // markers: true,
+        end: 'top 30%',
+        scrub: 1
+    }
+})
+gsap.from("#colon-2", {
+    bottom: '2%',
+    right: '5%',
+    duration: 0.6,
+    scrollTrigger:{
+        trigger: '#reviews',
+        // markers: true,
+        start: 'top 60%',
+        end: 'top 90',
+        scrub: 1
+    }
+})
+
+gsap.from('#wait-div > h1', {
+    top: '35px',
+    duration: 0.8,
+    scrollTrigger:{
+        trigger: '#wait-div',
+        // markers: true,
+        start: 'top 80%',
+        end: 'top 50%',
         scrub: 1
     }
 })
