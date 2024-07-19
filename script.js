@@ -11,7 +11,8 @@ document.addEventListener('mousemove', function (dets) {
     })
 })
 
-var targets = document.querySelectorAll('#nav *')
+var targets = document.querySelectorAll('#nav *, .card')
+console.log(targets)
 targets.forEach(element => {
     element.addEventListener('mouseenter', function () {
         cursor.style.scale = 4
