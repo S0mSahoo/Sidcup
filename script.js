@@ -82,9 +82,9 @@ gsap.from('#wait-div > h1', {
     duration: 0.8,
     scrollTrigger:{
         trigger: '#wait-div',
-        // markers: true,
+        markers: true,
         start: 'top 80%',
-        end: 'top 50%',
+        end: 'top 65%',
         scrub: 1
     }
 })
