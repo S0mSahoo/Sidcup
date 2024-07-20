@@ -701,6 +701,7 @@ body>img {
     flex-direction: column;
     /* border: 2px solid red; */
     position: relative;
+    gap: 4vw;
     height: 60vh;
     width: 100%;
     background-image: linear-gradient(to top right, #c5ff25, #348700);
