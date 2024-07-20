@@ -1,0 +1,282 @@
+@media(max-width: 1120px){
+    #nav{
+        justify-content: space-between;
+        h4{
+            display: none;
+        }
+        & > div{
+            display: flex;
+            svg{
+                height: 30px;
+                width: 30px;
+            }
+        }
+        
+    }
+    #page1{
+        width: 80%;
+        h1{
+            font-size: 10vw;
+            line-height: 10vw;
+        }
+        h4{
+            font-size: 5vw;
+        }
+        p{
+            font-size: 2vw;
+        }
+    }
+    #scroller{
+        div{
+            h4{
+                font-size: 10vw;
+            }
+        }
+    }
+    #page2{
+        height: auto;
+    }
+    #about{
+        justify-content: center;
+        height: auto;
+        margin-top: 7vw;
+    }
+    #about_extremes{
+        gap: 2rem;
+        justify-content: center;
+        img{
+            width: 40%;
+        }
+    }
+    #about_center{
+        position: relative;
+        height: auto;
+        width: 100%;
+        h4{
+            font-size: 4vw;
+        }
+        p{
+            font-size: 2vw;
+            line-height: 2.5vw;
+        }
+    }
+    #page3{
+        padding: 10vw 0;
+        gap: 20vw;
+        height: auto;
+        justify-content: center;
+    }
+    #card-container{
+        height: 60vw;
+        padding: 0 .5rem;
+    }
+    .card{
+        width: 28vw;
+        &>div{
+            gap: 2.5vw;
+            h4{
+                font-size: 3vw;
+                margin-top: 10vw;
+            }
+            p{
+                font-size: 1.3vw;
+                line-height: 1.8vw;
+            }
+        }
+        &>h4{
+            font-size: 3.2vw;
+            padding: 1rem 2.5vw;
+        }
+    }
+    #card-btn{
+        height: 10vw;
+        width: 10vw;
+        top: -3vw;
+        right: -3vw;
+        svg{
+            width: 4vw;
+            height: 4vw;
+        }
+    }
+    #green{
+        height: 25vw;
+        img{
+            width: 12vw;
+        }
+        div{
+            width: 60%;
+            h3{
+                font-size: 2.5vw;
+                line-height: 3.5vw;
+            }
+        }
+    }
+    #slider{
+        flex-direction: column;
+        height: auto;
+        &>img{
+            display: none;
+        }
+    }
+    #slider_left{
+        width: 100%;
+        padding: 1vw 0;
+        img{
+            width: 70%;
+            height: 45vw;
+        }
+    }
+    .dot{
+        height: 2vw;
+        width: 2vw;
+    }
+    .active{
+        height: 4vw;
+        width: 4vw;
+    }
+    #slider_right{
+        width: 100%;
+        padding: 1rem;
+        h1{
+            font-size: 8vw;
+            text-align: center;
+        }
+        p{
+            width: 100%;
+            text-align: center;
+            font-size: 4vw;
+            line-height: 6vw;
+        }
+    }
+    #page4{
+        min-height: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 20vw 0;
+        gap: 10vw;
+    }
+    #insta{
+        margin: 16vw 0;
+        svg{
+            height: 7vw;
+            width: 7vw;
+        }
+        p{
+            display: flex;
+            font-size: 4vw;
+        }
+    }
+    #reviews{
+        min-height: auto;
+        padding: 10vw 0;
+        p{
+            font-size: 3vw;
+            line-height: 5vw;
+        }
+    }
+    #wait-div{
+        padding-top: 4vw;
+        height: auto;
+        h1{
+            font-size: 5vw;
+        }
+    }
+    .row{
+        gap: 2vw;
+    }
+    .col{
+        height: 20vw;
+        span{
+            font-size: 3vw;
+        }
+    }
+    #footer{
+        height: 30vw;
+        padding: 2rem 1rem;
+        img{
+            width: 20vw;
+        }
+    }
+    #foot-row-1{
+        gap: 5vw;
+        height: auto;
+        img{
+            height: 8vw;
+        }
+    }
+    .links{
+        li{
+            font-size: 1.8vw;
+            line-height: 3vw;
+        }
+    }
+    #address{
+        span{
+            font-size: 1vw;
+            line-height: 1.5vw;
+        }
+        h4{
+            font-size: 1.3vw;
+            margin: 0;
+        }
+    }
+    #foot-row-2{
+        justify-content: center;
+        width: auto;
+        height: 20vw;
+        svg{
+            width: 3vw;
+            height: 3vw;
+        }
+    }
+    #foot-row-3{
+        margin: 0;
+        font-size: 1vw;
+        align-self: center;
+    }
+
+}
+
+@media(max-width: 500px){
+    #nav{
+        padding: 2vw 3vw;
+        img{
+            height: 15vw;
+        }
+        & > div{
+            display: flex;
+            svg{
+                height: 6vw;
+                width: 6vw;
+            }
+        }
+    }
+    #page1{
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    #scroller{
+        div{
+            h4{
+                font-size: 15vw;
+            }
+        }
+    }
+    #card-btn{
+        height: 8vw;
+        width: 8vw;
+        top: -2vw;
+        right: -2vw;
+        svg{
+            width: 3vw;
+            height: 3vw;
+        }
+    }
+    #insta{
+        p{
+            display: flex;
+            font-size: 3vw;
+        }
+    }
+}

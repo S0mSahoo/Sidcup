@@ -11,7 +11,7 @@ document.addEventListener('mousemove', function (dets) {
     })
 })
 
-var targets = document.querySelectorAll('#nav *, .card, .col, #foot-row-1 img, .links li, #address strong, #address h4, #foot-row-2 svg, #foot-row-3 span')
+var targets = document.querySelectorAll('#ham-click h4, #cross, #nav img, #nav h4, #nav div, .card, .col, #foot-row-1 img, .links li, #address strong, #address h4, #foot-row-2 svg, #foot-row-3 span, #insta')
 console.log(targets)
 targets.forEach(element => {
     element.addEventListener('mouseenter', function () {
@@ -28,7 +28,7 @@ targets.forEach(element => {
 
 gsap.to("#nav", {
     backgroundColor: '#000',
-    padding: '1rem 7rem',
+    padding: '2vw 8vw',
     duration: 0.5,
     scrollTrigger: {
         trigger: '#nav',
@@ -87,4 +87,13 @@ gsap.from('#wait-div > h1', {
         end: 'top 50%',
         scrub: 1
     }
+})
+var n = document.getElementById('ham-click')
+document.getElementById('ham').addEventListener('click', function(){
+    n.style.visibility = 'visible'
+    n.style.opacity = '1'
+})
+document.getElementById('cross').addEventListener('click', function(){
+    n.style.visibility = 'hidden'
+    n.style.opacity = '0'
 })
