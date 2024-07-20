@@ -239,7 +239,6 @@
 
 @media(max-width: 500px){
     #nav{
-        padding: 2vw 3vw;
         img{
             height: 15vw;
         }
