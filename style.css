@@ -199,7 +199,7 @@ body>img {
 }
 
 #page2 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 100vh;
     width: 100%;
     position: relative;
