@@ -28,13 +28,13 @@ targets.forEach(element => {
 
 gsap.to("#nav", {
     backgroundColor: '#000',
-    padding: '2rem 7rem',
+    padding: '2rem 100px',
     duration: 0.5,
     scrollTrigger: {
         trigger: '#nav',
-        start: 'top -1%',
+        start: 'top -10%',
         // markers: true,
-        end: 'top 15%',
+        end: 'top -25%',
         scrub: 1
     }
 })
