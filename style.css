@@ -18,7 +18,7 @@ body {
     background-color: #afe029;
     border-radius: 50%;
     z-index: 101;
-    transition: top .3s cubic-bezier(0.35, 0.72, 0.265, .9), left .3s cubic-bezier(0.35, 0.72, 0.265, .9), scale .5s cubic-bezier(0.35, 0.72, 0.265, .9), background-color .2s cubic-bezier(0.35, 0.72, 0.265, .9), outline .2s cubic-bezier(0.35, 0.72, 0.265, .9);
+    transition: top .3s cubic-bezier(0.35, 0.72, 0.265, .9), left .3s cubic-bezier(0.35, 0.72, 0.265, .9), scale .5s cubic-bezier(0.35, 0.72, 0.265, .9), background-color .2s cubic-bezier(0.35, 0.72, 0.265, .9), outline .2s cubic-bezier(0.35, 0.72, 0.265, .9), height .5s cubic-bezier(0.35, 0.72, 0.265, .9), width .5s cubic-bezier(0.35, 0.72, 0.265, .9);
     pointer-events: none;
 }
 

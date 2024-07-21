@@ -16,11 +16,15 @@ var targets = document.querySelectorAll('#ham-click h4, #cross, #nav img, #nav h
 targets.forEach(element => {
     element.addEventListener('mouseenter', function () {
         cursor.style.scale = 4
+        // cursor.style.height = '60px'
+        // cursor.style.width = '60px'
         cursor.style.backgroundColor = 'transparent'
         cursor.style.outline = '0.1px solid #fff'
     })
     element.addEventListener('mouseleave', function () {
         cursor.style.scale = 1
+        // cursor.style.height = '22px'
+        // cursor.style.width = '22px'
         cursor.style.backgroundColor = '#b7eb27'
         cursor.style.outline = 'none'
     })
