@@ -1,7 +1,7 @@
 var cursor = document.getElementById('cursor')
 var c_blur = document.getElementById('c-blur')
 document.addEventListener('mousemove', function (dets) {
-    console.log(dets)
+    // console.log(dets)
     requestAnimationFrame(() => {
         cursor.style.left = dets.x - 11 + 'px'
         cursor.style.top = dets.y - 11 + 'px'
@@ -12,7 +12,7 @@ document.addEventListener('mousemove', function (dets) {
 })
 
 var targets = document.querySelectorAll('#ham-click h4, #cross, #nav img, #nav h4, #nav div, .card, .col, #foot-row-1 img, .links li, #address strong, #address h4, #foot-row-2 svg, #foot-row-3 span, #insta')
-console.log(targets)
+// console.log(targets)
 targets.forEach(element => {
     element.addEventListener('mouseenter', function () {
         cursor.style.scale = 4
