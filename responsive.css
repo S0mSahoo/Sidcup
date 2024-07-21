@@ -16,14 +16,15 @@
     #page1{
         width: 80%;
         h1{
-            font-size: 10vw;
-            line-height: 10vw;
+            font-size: min(10vw, 10vh);
+            line-height: min(10vw, 10vh);
+            /* border: 2px solid red; */
         }
         h4{
-            font-size: 5vw;
+            font-size: min(5vw, 5vh);
         }
         p{
-            font-size: 2vw;
+            font-size: min(2vw, 2vh);
         }
     }
     #scroller{

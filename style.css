@@ -155,7 +155,7 @@ body>img {
     align-self: center;
     display: flex;
     flex-direction: column;
-    padding-top: 12rem;
+    padding-top: min(40vw, 40vh);
     justify-content: center;
     position: relative;
     color: #fff;
@@ -166,18 +166,20 @@ body>img {
     }
 
     h1 {
-        font-size: 130px;
+        font-size: min(15vh, 130px);
         font-weight: 900;
-        line-height: 110px;
+        line-height: min(13vh, 110px);
         position: relative;
+        display: inline-block;
+        margin: 1vh auto;
 
         /* text-shadow: -4px -4px 0 #000, -4.75px -4.75px 0 #95c11e; */
         &::before {
             content: "EAT. DRINK. PLAY.";
             position: absolute;
             color: #000;
-            left: -8px;
-            top: -4px;
+            left: max(-1vh, -8px);
+            top: max(-1vh, -4px);
             z-index: -1;
             -webkit-text-stroke: 1px #c5ff25;
         }
@@ -185,19 +187,19 @@ body>img {
 
     h4 {
         margin-top: 2rem;
-        font-size: 33px;
+        font-size: min(5vh, 33px);
         font-weight: 900;
     }
 
     p {
         margin-top: 1.5rem;
         padding: 0 5rem;
-        font-size: 20px;
+        font-size: min(3vh, 20px);
     }
 }
 
 #page2 {
-    /* border: 2px solid red; */
+    border: 2px solid red;
     height: 100vh;
     width: 100%;
     position: relative;
@@ -224,7 +226,7 @@ body>img {
         animation: scroll 30s linear infinite;
 
         h4 {
-            font-size: 130px;
+            font-size: min(18vh, 130px);
             /* -webkit-text-stroke: 1px #c5ff25; */
             color: black;
             text-shadow: 1px 1px 0 #c5ff25, -1px 1px 0 #c5ff25, 1px -1px 0 #c5ff25, -1px -1px 0 #c5ff25;
@@ -288,13 +290,13 @@ body>img {
 
     h4 {
         text-transform: uppercase;
-        font-size: 50px;
+        font-size: min(8vh, 50px);
         font-weight: 900;
     }
 
     p {
-        font-size: 20px;
-        line-height: 40px;
+        font-size: min(3vh, 20px);
+        line-height: min(4vh, 40px);
     }
 }
 
@@ -538,12 +540,12 @@ body>img {
     /* justify-content: center; */
     h1{
         text-transform: uppercase;
-        font-size: 50px;
+        font-size: min(10vh, 50px);
         font-weight: 900;
     }
     p{
-        font-size: 20px;
-        line-height: 40px;
+        font-size: min(3vh, 20px);
+        line-height: min(5vh, 40px);
         width: 90%;
     }
 }
@@ -604,9 +606,9 @@ body>img {
     p{
         width: 65%;
         color: #fff;
-        font-size: 30px;
+        font-size: min(4.5vh, 30px);
         font-weight: 800;
-        line-height: 50px;
+        line-height: min(9vh, 50px);
         text-transform: uppercase;
         text-align: center;
     }
@@ -633,7 +635,7 @@ body>img {
     }
     h1{
         /* color: #fff; */
-        font-size: 75px;
+        font-size: min(15vh, 75px);
         text-transform: uppercase;
         font-weight: 900;
         text-align: center;
@@ -663,7 +665,7 @@ body>img {
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 40px;
+    font-size: min(6vh, 40px);
     transition: background-color .2s ease-in-out;
     position: relative;
     overflow: hidden;
@@ -748,8 +750,8 @@ body>img {
     align-items: flex-start;
     li{
         text-transform: uppercase;
-        font-size: 30px;
-        line-height: 50px;
+        font-size: min(6vh, 30px);
+        line-height: min(8vh, 50px);
         font-weight: 900;
         transition: color .2s ease-in-out;
         /* border: 2px solid red; */
@@ -766,7 +768,7 @@ body>img {
     /* border: 2px solid red; */
     text-transform: uppercase;
     width: 30%;
-    font-size: 18px;
+    font-size: min(3vh, 18px);
     font-weight: 600;
     display: flex;
     flex-direction: column;
@@ -775,11 +777,11 @@ body>img {
         /* border: 2px solid red; */
     }
     span{
-        line-height: 25px;
+        line-height: min(4vh, 25px);
     }
     h4{
         margin-top: 5px;
-        font-size: 20px;
+        font-size: min(4vh, 25px);
         transition: color .2s ease-in-out;
         &:hover{
             color: #fff;
@@ -814,7 +816,7 @@ body>img {
 }
 #foot-row-3{
     /* border: 2px solid red; */
-    margin-top: 5rem;
+    /* margin-top: min(1vh, 5rem); */
     font-weight: 500;
     span{
         transition: color .2s ease-in-out;
